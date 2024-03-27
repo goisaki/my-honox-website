@@ -1,26 +1,45 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: "en-US",
   title: "HonoX",
   description: "The supersonic meta framework by Hono",
+  lastUpdated: true,
+  ignoreDeadLinks: true,
+  cleanUrls: true,
+  markdown: {
+    theme: {
+      light: "github-light",
+      dark: "github-dark",
+    },
+  },
   themeConfig: {
+    logo: "/images/logo-small.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
       { text: "Docs", link: "/docs/" },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "Docs",
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
           { text: "What is HonoX?", link: "/docs/" },
         ],
       },
     ],
 
     socialLinks: [
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present Yusuke Wada & Hono contributors<br/>Unofficial document written by @goisaki.',
+    },
+  },
+  head: [["link", { rel: "shortcut icon", href: "/favicon.ico" }]],
+  titleTemplate: ":title - HonoX",
+});
