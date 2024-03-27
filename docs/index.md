@@ -1,4 +1,4 @@
-> If you want to run the HonoX App first, please see Quick Start
+> If you want to run the HonoX App first, please see [Getting Started](/docs/getting-started)
 
 # What is HonoX?
 

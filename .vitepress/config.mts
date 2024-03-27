@@ -27,6 +27,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "What is HonoX?", link: "/docs/" },
+          { text: "Getting Started", link: "/docs/getting-started" },
         ],
       },
     ],
