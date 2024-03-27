@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/my-honox-website/",
   lang: "en-US",
   title: "HonoX",
   description: "The supersonic meta framework by Hono",
